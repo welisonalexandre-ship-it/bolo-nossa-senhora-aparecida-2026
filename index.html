@@ -20,9 +20,7 @@
   --muted:#cbd0df;
 }
 
-*{
-  box-sizing:border-box;
-}
+*{box-sizing:border-box}
 
 html{
   scroll-behavior:smooth;
@@ -502,8 +500,6 @@ button{
   font-weight:700;
 }
 
-/* BOTÕES DO PIX */
-
 .pix-actions{
   display:flex;
   flex-direction:column;
@@ -520,8 +516,6 @@ button{
   margin-top:0;
 }
 
-/* BOTÃO DO WHATSAPP */
-
 .btn.whatsapp{
   background:#1f9d55;
   border-color:#35c96b;
@@ -534,7 +528,8 @@ button{
   transform:translateY(-2px);
 }
 
-/* JANELA DO FORMULÁRIO */
+
+/* FORMULÁRIO */
 
 .form-modal{
   position:fixed;
@@ -712,6 +707,7 @@ button{
   color:#fff;
 }
 
+
 /* MODAL DE INFORMAÇÕES */
 
 .modal{
@@ -778,6 +774,7 @@ button{
   color:var(--gold2);
 }
 
+
 /* CELULAR */
 
 @media(max-width:800px){
@@ -833,16 +830,19 @@ button{
     font-size:22px;
   }
 }
+
 </style>
 </head>
 
 <body>
+
 
 <!-- CAPA -->
 
 <section class="screen" id="cover">
 
   <div class="ornament"></div>
+
   <div class="corner c1"></div>
   <div class="corner c2"></div>
   <div class="corner c3"></div>
@@ -850,7 +850,9 @@ button{
 
   <div class="intro">
 
-    <div class="cross">✝</div>
+    <div class="cross">
+      ✝
+    </div>
 
     <div class="kicker">
       CAPELA NOSSA SENHORA APARECIDA
@@ -895,6 +897,7 @@ button{
 
 <main id="invite">
 
+
   <!-- HERO -->
 
   <div class="screen">
@@ -935,13 +938,17 @@ button{
           <a
             class="btn primary"
             href="#evento">
+
             Ver convite completo
+
           </a>
 
           <a
             class="btn"
             href="#pix">
+
             Participar
+
           </a>
 
         </div>
@@ -962,7 +969,9 @@ button{
           style="display:none">
 
           Nossa Senhora Aparecida
+
           <br><br>
+
           Rogai por nós!
 
         </div>
@@ -995,6 +1004,7 @@ button{
 
 
       <div class="event-grid">
+
 
         <div class="card">
 
@@ -1034,6 +1044,7 @@ button{
           <p>
 
             Tradicional
+
             <strong>
               Bolo de Nossa Senhora Aparecida
             </strong>
@@ -1061,6 +1072,7 @@ button{
 
         </div>
 
+
       </div>
 
     </div>
@@ -1082,8 +1094,8 @@ button{
 
         <p>
 
-          Será realizado o leilão de um lindo e delicioso bolo decorado
-          com a imagem da Padroeira.
+          Será realizado o leilão de um lindo e delicioso bolo decorado com a
+          imagem da Padroeira.
 
           Entre todos os participantes, haverá ainda o
           <strong>sorteio de um segundo bolo</strong>,
@@ -1140,7 +1152,8 @@ button{
 
           <div class="pix-actions">
 
-            <!-- COPIAR PIX -->
+
+            <!-- COPIAR CHAVE PIX -->
 
             <button
               class="btn primary copy"
@@ -1160,6 +1173,7 @@ button{
               📲 Enviar comprovante para Susamara
 
             </button>
+
 
           </div>
 
@@ -1203,7 +1217,6 @@ button{
       </h2>
 
       <div class="gold-line"></div>
-
 
       <p
         class="section-sub"
@@ -1275,6 +1288,7 @@ button{
 
   </footer>
 
+
 </main>
 
 
@@ -1302,8 +1316,6 @@ button{
     </button>
 
 
-    <!-- ÍCONE -->
-
     <div class="form-icon">
       📲
     </div>
@@ -1328,7 +1340,7 @@ button{
     </p>
 
 
-    <!-- EXPLICAÇÃO -->
+    <!-- PASSO 1 -->
 
     <div class="form-step">
 
@@ -1338,7 +1350,8 @@ button{
 
       <div class="form-step-text">
 
-        Preencha seu <strong>nome, telefone e valor do Pix</strong>
+        Preencha seu
+        <strong>nome, telefone e valor do Pix</strong>
         nos campos abaixo.
 
       </div>
@@ -1352,7 +1365,7 @@ button{
       class="form-label"
       for="personName">
 
-      Seu nome completo
+      Seu nome
 
     </label>
 
@@ -1360,7 +1373,7 @@ button{
       class="form-input"
       id="personName"
       type="text"
-      placeholder="Ex.: Maria da Silva"
+      placeholder="Digite seu nome"
       autocomplete="name">
 
 
@@ -1378,7 +1391,7 @@ button{
       class="form-input"
       id="personPhone"
       type="tel"
-      placeholder="Ex.: (84) 99999-9999"
+      placeholder="(84) 99999-9999"
       autocomplete="tel">
 
     <div class="form-help">
@@ -1403,11 +1416,11 @@ button{
       id="pixValue"
       type="text"
       inputmode="decimal"
-      placeholder="Ex.: R$ 50,00">
+      placeholder="R$ 0,00">
 
     <div class="form-help">
 
-      Digite o valor que você enviou pelo Pix.
+      Informe o valor que você enviou pelo Pix.
 
     </div>
 
@@ -1434,7 +1447,7 @@ button{
     </button>
 
 
-    <!-- AVISO -->
+    <!-- EXPLICAÇÃO -->
 
     <p class="form-warning">
 
@@ -1466,7 +1479,6 @@ button{
 
 
   <div class="modal-card">
-
 
     <button
       class="close"
@@ -1529,7 +1541,7 @@ button{
 
 <script>
 
-/* ABRIR O CONVITE */
+/* ABRIR CONVITE */
 
 function openInvite(){
 
@@ -1545,7 +1557,7 @@ function openInvite(){
 }
 
 
-/* COPIAR CHAVE PIX */
+/* COPIAR PIX */
 
 function copyPix(){
 
@@ -1555,14 +1567,14 @@ function copyPix(){
 
   .then(()=>{
 
-    document.getElementById('copied').textContent=
+    document.getElementById('copied').textContent =
       '✓ Chave Pix copiada!';
 
   })
 
   .catch(()=>{
 
-    document.getElementById('copied').textContent=
+    document.getElementById('copied').textContent =
       'cnsaparecida.pmj@gmail.com';
 
   });
@@ -1593,7 +1605,7 @@ function closeProofForm(){
 }
 
 
-/* FORMATA O TELEFONE */
+/* FORMATA TELEFONE */
 
 document.getElementById('personPhone')
 .addEventListener('input', function(){
@@ -1614,7 +1626,9 @@ document.getElementById('personPhone')
       '-' +
       value.substring(7);
 
-  }else if(value.length > 2){
+  }
+
+  else if(value.length > 2){
 
     value =
       '(' +
@@ -1629,16 +1643,20 @@ document.getElementById('personPhone')
 });
 
 
-/* FORMATA O VALOR */
+/* FORMATA VALOR */
 
 document.getElementById('pixValue')
 .addEventListener('input', function(){
 
-  let value = this.value.replace(/\D/g,'');
+  let value =
+    this.value.replace(/\D/g,'');
 
   if(value === ''){
+
     this.value = '';
+
     return;
+
   }
 
   value = parseInt(value,10);
@@ -1649,14 +1667,17 @@ document.getElementById('pixValue')
 
   value =
     'R$ ' +
-    value.replace(/\B(?=(\d{3})+(?!\d))/g,'.');
+    value.replace(
+      /\B(?=(\d{3})+(?!\d))/g,
+      '.'
+    );
 
   this.value = value;
 
 });
 
 
-/* ENVIAR PARA O WHATSAPP */
+/* ENVIAR PARA WHATSAPP */
 
 function sendProofToWhatsApp(){
 
@@ -1676,7 +1697,7 @@ function sendProofToWhatsApp(){
     document.getElementById('formError');
 
 
-  /* VERIFICA SE PREENCHERAM */
+  /* VERIFICA OS CAMPOS */
 
   if(!name || !phone || !value){
 
@@ -1690,13 +1711,13 @@ function sendProofToWhatsApp(){
   }
 
 
-  /* TELEFONE DO DESTINATÁRIO */
+  /* NÚMERO DA SUSAMARA */
 
   const whatsappNumber =
     '5584988783732';
 
 
-  /* MENSAGEM */
+  /* MENSAGEM AUTOMÁTICA */
 
   const message =
 
@@ -1712,8 +1733,7 @@ Estou enviando o comprovante em anexo.
 Obrigado(a)!`;
 
 
-
-  /* TRANSFORMA A MENSAGEM PARA URL */
+  /* CRIA LINK DO WHATSAPP */
 
   const whatsappURL =
     'https://wa.me/' +
@@ -1722,7 +1742,7 @@ Obrigado(a)!`;
     encodeURIComponent(message);
 
 
-  /* ABRE O WHATSAPP */
+  /* ABRE WHATSAPP */
 
   window.open(
     whatsappURL,
@@ -1730,7 +1750,7 @@ Obrigado(a)!`;
   );
 
 
-  /* FECHA A JANELA */
+  /* FECHA FORMULÁRIO */
 
   closeProofForm();
 
