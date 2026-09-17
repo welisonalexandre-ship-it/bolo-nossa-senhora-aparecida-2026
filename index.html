@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -6,6 +7,7 @@
 <meta name="theme-color" content="#101b45">
 <meta name="description" content="Convite digital — Bolo de Nossa Senhora Aparecida 2026">
 <title>Bolo de Nossa Senhora Aparecida 2026</title>
+
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Great+Vibes&family=Montserrat:wght@300;400;500;600;700&display=swap');
 
@@ -114,6 +116,18 @@ button{font:inherit}
 .btn:hover{background:rgba(215,173,88,.12);transform:translateY(-2px)}
 .btn.primary{background:linear-gradient(135deg,#e8c878,#b9852c);color:#141a36;border-color:#f0d38b;font-weight:700}
 
+/* BOTÃO DO WHATSAPP */
+.btn.whatsapp{
+  background:#1f9d55;
+  border-color:#35c96b;
+  color:#fff;
+  font-weight:700;
+}
+.btn.whatsapp:hover{
+  background:#168447;
+  transform:translateY(-2px);
+}
+
 .footer{text-align:center;padding:60px 20px 75px;color:#aeb4c7;border-top:1px solid rgba(215,173,88,.14)}
 .footer strong{display:block;color:#fff;margin-bottom:7px}
 .footer .gold{color:var(--gold2)}
@@ -136,146 +150,307 @@ button{font:inherit}
 }
 </style>
 </head>
+
 <body>
 
 <section class="screen" id="cover">
-  <div class="ornament"></div><div class="corner c1"></div><div class="corner c2"></div><div class="corner c3"></div><div class="corner c4"></div>
+  <div class="ornament"></div>
+  <div class="corner c1"></div>
+  <div class="corner c2"></div>
+  <div class="corner c3"></div>
+  <div class="corner c4"></div>
+
   <div class="intro">
     <div class="cross">✝</div>
     <div class="kicker">CAPELA NOSSA SENHORA APARECIDA</div>
     <h1 class="title">APARECIDA</h1>
     <div class="script">Rogai por nós!</div>
+
     <div class="envelope-wrap">
       <button class="envelope" aria-label="Abrir convite" onclick="openInvite()">
-        <div class="flap"></div><div class="seal">✝</div>
+        <div class="flap"></div>
+        <div class="seal">✝</div>
       </button>
     </div>
-    <div class="tap"><span>⌄</span><br>TOQUE NO ENVELOPE PARA ABRIR</div>
+
+    <div class="tap">
+      <span>⌄</span><br>
+      TOQUE NO ENVELOPE PARA ABRIR
+    </div>
   </div>
 </section>
 
 <main id="invite">
+
   <div class="screen">
-    <div class="ornament"></div><div class="corner c1"></div><div class="corner c2"></div>
+    <div class="ornament"></div>
+    <div class="corner c1"></div>
+    <div class="corner c2"></div>
+
     <div class="container hero">
+
       <div class="hero-copy">
         <div class="hero-kicker">NOSSA SENHORA APARECIDA</div>
-        <h2><span>BOLO</span><span>DE NOSSA</span><span>SENHORA</span></h2>
+
+        <h2>
+          <span>BOLO</span>
+          <span>DE NOSSA</span>
+          <span>SENHORA</span>
+        </h2>
+
         <div class="script">Um gesto de fé, amor e fraternidade.</div>
+
         <p class="hero-text">
           A Comunidade Nossa Senhora Aparecida convida você e sua família
           para participar dos festejos de 2026 e do tradicional
           <strong>“Bolo de Nossa Senhora Aparecida”</strong>.
         </p>
+
         <div class="actions">
           <a class="btn primary" href="#evento">Ver convite completo</a>
           <a class="btn" href="#pix">Participar</a>
         </div>
       </div>
+
       <div class="saint">
-        <img src="assets/nossa-senhora.jpg" alt="Nossa Senhora Aparecida"
+        <img src="assets/nossa-senhora.jpg"
+             alt="Nossa Senhora Aparecida"
              onerror="this.style.display='none';document.getElementById('fallback').style.display='block'">
-        <div id="fallback" class="fallback-saint" style="display:none">Nossa Senhora Aparecida<br><br>Rogai por nós!</div>
+
+        <div id="fallback" class="fallback-saint" style="display:none">
+          Nossa Senhora Aparecida<br><br>
+          Rogai por nós!
+        </div>
       </div>
+
     </div>
   </div>
 
   <section class="section" id="evento">
     <div class="container">
+
       <h2 class="section-title">Você é nosso convidado</h2>
       <div class="gold-line"></div>
+
       <p class="section-sub">
         Venha celebrar conosco este momento de fé, alegria e união.
         Sua participação torna esta celebração ainda mais especial.
       </p>
 
       <div class="event-grid">
-        <div class="card"><div class="icon">◷</div><h3>DATA</h3><p><strong>12 de outubro de 2026</strong><br>após a Missa de encerramento</p></div>
-        <div class="card"><div class="icon">♰</div><h3>EVENTO</h3><p>Tradicional <strong>Bolo de Nossa Senhora Aparecida</strong></p></div>
-        <div class="card"><div class="icon">♡</div><h3>PARTICIPE</h3><p>Com sua família e venha celebrar conosco!</p></div>
+
+        <div class="card">
+          <div class="icon">◷</div>
+          <h3>DATA</h3>
+          <p>
+            <strong>12 de outubro de 2026</strong><br>
+            após a Missa de encerramento
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="icon">♰</div>
+          <h3>EVENTO</h3>
+          <p>
+            Tradicional <strong>Bolo de Nossa Senhora Aparecida</strong>
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="icon">♡</div>
+          <h3>PARTICIPE</h3>
+          <p>
+            Com sua família e venha celebrar conosco!
+          </p>
+        </div>
+
       </div>
     </div>
   </section>
 
   <section class="section">
     <div class="container">
+
       <div class="highlight">
         <h3>Como será?</h3>
+
         <p>
           Será realizado o leilão de um lindo e delicioso bolo decorado com a
           imagem da Padroeira. Entre todos os participantes, haverá ainda o
           <strong>sorteio de um segundo bolo</strong>, como gesto de gratidão e amor fraterno.
         </p>
       </div>
+
     </div>
   </section>
 
+  <!-- SEÇÃO DO PIX -->
   <section class="section" id="pix">
+
     <div class="container">
+
       <h2 class="section-title">Participe desta celebração</h2>
       <div class="gold-line"></div>
+
       <div class="pix">
+
         <div class="pix-box">
-          <p class="pix-note">Para participar, utilize a chave Pix abaixo:</p>
-          <div class="pix-key">cnsaparecida.pmj@gmail.com</div>
-          <p class="pix-note">Depois, preencha seus dados e entregue a informação à Susamara.</p>
-          <button class="btn primary copy" onclick="copyPix()">Copiar chave Pix</button>
-          <div id="copied" style="color:#f0d38b;margin-top:10px;min-height:20px"></div>
+
+          <p class="pix-note">
+            Para participar, utilize a chave Pix abaixo:
+          </p>
+
+          <div class="pix-key">
+            cnsaparecida.pmj@gmail.com
+          </div>
+
+          <p class="pix-note">
+            Depois, preencha seus dados e entregue a informação à Susamara.
+          </p>
+
+          <button class="btn primary copy" onclick="copyPix()">
+            Copiar chave Pix
+          </button>
+
+          <!-- NOVO BOTÃO -->
+          <br>
+
+          <a class="btn whatsapp"
+             href="https://wa.me/5584988783732?text=Ol%C3%A1%20Susamara!%20Estou%20enviando%20o%20comprovante%20do%20Bolo%20de%20Nossa%20Senhora%20Aparecida."
+             target="_blank"
+             rel="noopener noreferrer">
+            📲 Enviar comprovante para Susamara
+          </a>
+
+          <div id="copied"
+               style="color:#f0d38b;margin-top:10px;min-height:20px">
+          </div>
+
         </div>
+
         <div class="qr">
-          <img src="assets/qrcode.jpg" alt="QR Code para pagamento" onerror="this.parentElement.innerHTML='<div style=&quot;color:#111;text-align:center;padding:35px 10px&quot;>QR Code<br>substitua o arquivo<br>assets/qrcode.jpg</div>'">
+          <img src="assets/qrcode.jpg"
+               alt="QR Code para pagamento"
+               onerror="this.parentElement.innerHTML='<div style=&quot;color:#111;text-align:center;padding:35px 10px&quot;>QR Code<br>substitua o arquivo<br>assets/qrcode.jpg</div>'">
         </div>
+
       </div>
+
     </div>
   </section>
 
   <section class="section">
+
     <div class="container">
+
       <h2 class="section-title">Uma mensagem especial</h2>
       <div class="gold-line"></div>
+
       <p class="section-sub" style="font-size:18px">
         “Participe com sua família e venha celebrar conosco!<br>
         Deus abençoe você e sua família!”
       </p>
+
       <div class="actions">
-        <button class="btn primary" onclick="document.getElementById('infoModal').classList.add('open')">Mais informações</button>
-        <a class="btn" href="#top" onclick="window.scrollTo({top:0,behavior:'smooth'});return false">Voltar ao início</a>
+
+        <button class="btn primary"
+                onclick="document.getElementById('infoModal').classList.add('open')">
+          Mais informações
+        </button>
+
+        <a class="btn"
+           href="#top"
+           onclick="window.scrollTo({top:0,behavior:'smooth'});return false">
+          Voltar ao início
+        </a>
+
       </div>
+
     </div>
+
   </section>
 
   <footer class="footer">
+
     <strong>CAPELA NOSSA SENHORA APARECIDA</strong>
-    <span>CONJUNTO — REDENÇÃO · MOSSORÓ — RN</span>
-    <p class="gold">Pe. Max Bruno · Pároco<br>Pe. Talvacy Chaves · Vigário</p>
-    <small>Que Nossa Senhora Aparecida abençoe você e sua família. ✦</small>
+
+    <span>
+      CONJUNTO — REDENÇÃO · MOSSORÓ — RN
+    </span>
+
+    <p class="gold">
+      Pe. Max Bruno · Pároco<br>
+      Pe. Talvacy Chaves · Vigário
+    </p>
+
+    <small>
+      Que Nossa Senhora Aparecida abençoe você e sua família. ✦
+    </small>
+
   </footer>
+
 </main>
 
-<div class="modal" id="infoModal" onclick="if(event.target===this)this.classList.remove('open')">
+<div class="modal"
+     id="infoModal"
+     onclick="if(event.target===this)this.classList.remove('open')">
+
   <div class="modal-card">
-    <button class="close" onclick="document.getElementById('infoModal').classList.remove('open')">×</button>
+
+    <button class="close"
+            onclick="document.getElementById('infoModal').classList.remove('open')">
+      ×
+    </button>
+
     <h3>Informações do convite</h3>
-    <p><strong>Data:</strong> 12/10/2026, após a Missa de encerramento.</p>
-    <p><strong>Local:</strong> Capela Nossa Senhora Aparecida — Conjunto Redenção, Mossoró-RN.</p>
-    <p><strong>Pix:</strong> cnsaparecida.pmj@gmail.com</p>
-    <p>Para outros detalhes, entre em contato com a organização da comunidade.</p>
+
+    <p>
+      <strong>Data:</strong>
+      12/10/2026, após a Missa de encerramento.
+    </p>
+
+    <p>
+      <strong>Local:</strong>
+      Capela Nossa Senhora Aparecida — Conjunto Redenção, Mossoró-RN.
+    </p>
+
+    <p>
+      <strong>Pix:</strong>
+      cnsaparecida.pmj@gmail.com
+    </p>
+
+    <p>
+      Para outros detalhes, entre em contato com a organização da comunidade.
+    </p>
+
   </div>
+
 </div>
 
 <script>
+
 function openInvite(){
   document.getElementById('cover').style.display='none';
   document.getElementById('invite').classList.add('show');
   window.scrollTo({top:0,behavior:'instant'});
 }
+
 function copyPix(){
+
   navigator.clipboard.writeText('cnsaparecida.pmj@gmail.com').then(()=>{
+
     document.getElementById('copied').textContent='✓ Chave Pix copiada!';
+
   }).catch(()=>{
+
     document.getElementById('copied').textContent='cnsaparecida.pmj@gmail.com';
+
   });
+
 }
+
 </script>
+
 </body>
 </html>
+```
